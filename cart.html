@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shopping Cart</title>
+ <meta name="robots" content="noindex,follow" />
+  <link rel="stylesheet" href="cart.css" media="screen" title="no title" charset="utf-8">
+  <script src="https://kit.fontawesome.com/61fb98ce23.js" crossorigin="anonymous"></script>
+ 
+<script src="cart.js" async></script>
+</head>
+
+<body>
+  <main>
+    <div class="shopping-cart">
+        <!-- Title -->
+        <div class="title">
+          Shopping Bag
+        </div>
+        <div class="Entete">
+          <ul>
+           <li><span>Article</span></li> 
+          
+          <li>
+            <span>Description</span>
+          </li>
+       
+          <li>
+            <span>Quantité</span>
+          </li>
+       
+          <li><span>Prix</span></li>
+        </ul>
+        </div>
+      
+        <!-- Product #1 -->
+        <div class="item">
+          <div class="buttons">
+            <span class="delete-btn"></span>
+            <i class="fas fa-heart"></i>
+          </div>
+       
+          <div class="image">
+            <img src="ressourses/images/macaron_cassis.jpg" alt="macaron_cassis" width="170" height="90"/>
+          </div>
+       
+          <div class="description">
+            <span>Macaron cassis</span>
+            <span>Crème au café</span>
+            <span>Taille Moyen</span>
+          </div>
+       
+          <div class="quantity">
+            <button class="plus-btn" >
+              <img src="ressourses/images/plus.png" alt="plus-btn" width="20" height="20" />
+            </button>
+            <p class="quantity_input">0</p> 
+            
+            <button class="minus-btn" >
+              <img src="ressourses/images/minus.png" alt="minus-btn"width="20" height="20" />
+            </button>
+          </div>
+       
+          <div class="total-price">78 TND</div>
+        </div>
+       
+        <!-- Product #2 -->
+        <div class="item">
+          <div class="buttons">
+            <span class="delete-btn"></span>
+            <i class="fas fa-heart"></i>
+          </div>
+       
+          <div class="image">
+            <img src="ressourses/images/macaron_framboise.jpg" alt="macaron_framboise" width="170" height="90"/>
+          </div>
+       
+          <div class="description">
+            <span>Macaron Framboise</span>
+            <span>Crème Chocolat</span>
+            <span>Petit Taille</span>
+          </div>
+       
+          <div class="quantity">
+            <button class="plus-btn" >
+              <img src="ressourses/images/plus.png" alt="plus-btn"width="20" height="20" />
+            </button>
+            <p class="quantity_input">0</p> 
+            <button class="minus-btn" >
+              <img src="ressourses/images/minus.png" alt="minus-btn"width="20" height="20" />
+            </button>
+          </div>
+       
+       
+          <div class="total-price">54 TND</div>
+        </div>
+       
+        <!-- Product #3 -->
+        <div class="item">
+          <div class="buttons">
+            <span class="delete-btn"></span>
+            <i class="fas fa-heart"></i>
+          </div>
+       
+          <div class="image">
+            <img src="ressourses/images/macaron_pistache.jpg" alt="macaron_pistache" width="170" height="90" />
+          </div>
+       
+          <div class="description">
+            <span>Macaron Pistache</span>
+            <span>Crème Pistache</span>
+            <span>Grand Taille</span>
+          </div>
+       
+          <div class="quantity">
+            <button class="plus-btn"  >
+              <img src="ressourses/images/plus.png" alt="plus-btn" width="20" height="20" />
+            </button>
+            <p class="quantity_input">0</p> 
+
+            <button class="minus-btn"  >
+              <img src="ressourses/images/minus.png" alt="minus-btn"width="20" height="20" />
+            </button>
+          </div>
+       
+       
+          <div class="total-price">87 TND</div>
+        </div>
+   <!--prix total-->
+ 
+    <div class="cart-comp"><p id="total-cart">Prix Totale: 0 TND</p></div>
+   
+   
+  </div>
+ <button class="submit" onclick="alert('Votre commande est passée avec succès! Merci pour votre visite!')"> Commander</button>
+  </div>
+</body>

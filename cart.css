@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+  }
+   
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-image: Url("ressourses/images/Macaron.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:100%;
+    background-image: rgb(1, 24, 1);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  div{background-color: white;}
+  .shopping-cart {
+    width: 750px;
+    height: 580px;
+    margin: 60px auto 20px auto;
+    background: #FFFFFF;
+    box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+    border-radius: 6px;
+   
+    display: flex;
+    flex-direction: column;
+  }
+  .title {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    height: 70px;
+    margin-left: 30%;
+    padding: 20px 30px;
+    color:goldenrod;
+    font-size: 40px;
+    font-weight: 200;
+  }
+  .Entete {
+    padding: 10px 0px;
+    height: 60px;
+    width: 750px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+
+  }
+
+  .Entete ul {display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    list-style: none;
+    padding:0px  50px;
+    margin-left:110px;
+  }
+  .Entete ul li span{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline;
+  font-weight: bold;
+color: #5E6977;
+padding: 20px 30px;
+margin:0 20px;
+justify-self: center;
+}
+   
+  .item {   border-top:  1px solid #E1E8EE;
+    border-bottom:  1px solid #E1E8EE;
+    padding: 20px 30px;
+    height: 130px;
+    display: flex;
+    
+  }
+  .cart-comp{
+color:#43484D;
+    border-top:  1px solid #E1E8EE;
+    border-bottom:  1px solid #E1E8EE;
+    padding-left: 580px;
+    height: 70px;
+    display: flex;
+    justify-items: flex-end;
+  }
+   
+  .item:nth-child(3) {box-shadow: 0px 0px 6px gray;
+ 
+  }
+  .buttons {
+    position: relative;
+    padding-top: 30px;
+    margin-right: 60px;
+    display: flex;
+    justify-items: space-around;
+    width: 130px;
+  }
+  .delete-btn,
+  .like-btn {
+    display: inline-block;
+    Cursor: pointer;
+    
+  }
+  .delete-btn {
+    width: 350px;
+    height: 350px;
+    background: url(ressourses/images/DELET.png) ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+     margin-right:10px;
+  }
+  .fa-heart {
+    display: inline-block;
+    Cursor: pointer;
+    color: lightslategrey;
+    position: absolute;
+    top: 27px;
+    left: 25px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+  }
+  
+  .myClass{color: red;
+    display: inline-block;
+    Cursor: pointer;
+    position: absolute;
+    top: 27px;
+    left: 25px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;}  
+  .image {
+    margin-right: 40px;
+  }
+
+  .description {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 30px;
+    width: 130;
+  }
+   
+  .description span {
+    display: block;
+    font-size: 13.5px;
+    color: #43484D;
+    font-weight: 200;
+    width: auto;
+  }
+   
+  .description span:first-child {
+    margin-bottom: 5px;
+    width: 120;
+  }
+  .description span:last-child {
+    font-weight: 300;
+    margin-top: 8px;
+    color: #86939E;
+    width: auto;
+  }
+  .quantity {
+    /*padding-top: 30px;*/
+    margin-right: 60px;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .quantity .quantity_input {
+    -webkit-appearance: none;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 6px 0px;
+    margin: 0px 8px;
+    border:none;
+  text-align: center;
+  
+    width: 80px;
+    height:20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 13px;
+    color: #43484D;
+    font-weight: 100;
+    
+  
+  }
+   
+  .plus-btn,.minus-btn,.buttons {
+    width: 20px;
+    height: 20px;
+    background-color:transparent;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .minus-btn img {
+    margin-bottom: 3px;
+    
+  }
+  .plus-btn img {
+    margin-top: 2px;
+   
+    
+  }
+  .plus-btn  {
+    margin-right: 15%;
+   
+    
+  }
+   
+  button:focus,
+  input:focus {
+    outline:0;
+  }
+  .total-price {
+    width: 83px;
+    padding-top: 27px;
+    text-align: center;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+  }
+  .total-cart{font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 83px;
+    padding-top: 27px;
+    text-align: center;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+  }
+  .submit{margin-left: 43%;margin-top: 0%;
+    width:200px; height:50px;
+  border-radius: 9px;
+  color:gray;
+  background-color: rgb(235, 235, 217);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic; 
+  font-size: 20px;
+  font-weight: 200;
+
+cursor: pointer;}
+.submit:hover{
+color:goldenrod;
+box-shadow: 0px 0px 6px 0px;
+}
+  @media (max-width: 800px) {
+    .shopping-cart {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+    }
+    .title {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-style: italic;
+      height: 90px;
+      margin-left: 30%;
+      padding: 20px 30px;
+      color:goldenrod;
+      font-size: 40px;
+      font-weight: 200;
+    }
+    .item {
+      height: auto;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .image img {
+      border-radius: 4%;
+      border-style:solid;
+      border-width: 3px;
+      border-color:gray;
+width: 200px;
+height: 150px;
+
+    }
+    .image,.quantity,.description {
+      width: 100%;
+      text-align: center;
+      margin: 6px 0;
+    }
+    .buttons {
+      margin:10px ;
+      
+
+    }
+    .plus-btn {
+     
+      margin-left:35%;
+      margin-right: 0;
+    }
+    .minus-btn{margin-right:35%;
+
+    }
+    .quantity .quantity_input {
+    
+      margin: 0px 20px;
+    }
+    .Entete{display: none;}
+    .submit{margin-left:40%;}
+  }
